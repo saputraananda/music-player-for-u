@@ -1,0 +1,93 @@
+/* Style Global */
+body {
+    background: linear-gradient(135deg, #a8d5ba, #e5f0d8);
+    font-family: 'Poppins', sans-serif;
+    color: #3c4a3e;
+}
+
+/* Music Player Styling */
+.music-player {
+    background-color: #ffffff;
+    border-radius: 20px;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #3c4a3e;
+}
+
+p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #6b7a72;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Styling for the progress bar */
+.progress {
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-bar {
+    background-color: #6fbf73;
+    transition: width 0.1s ease-in-out;
+}
+
+.progress-container:hover .progress-bar {
+    background-color: #4b9f5a;
+}
+
+
+/* Button Styling */
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6fbf73;
+    border: none;
+}
+
+
+.btn-outline-light {
+    background-color: #ffffff;
+    border: 2px solid #6fbf73;
+}
+
+/* Button Icons */
+.bi {
+    font-size: 1.5rem;
+    color: #3c4a3e;
+}
+
+/* Hover Effects */
+.btn-circle:hover {
+    background-color: #3c4a3e;
+    color: #ffffff;
+}
+
+.btn-outline-light:hover {
+    background-color: #6fbf73;
+    color: white;
+}
+
+/* Time display styling */
+#current-time, #duration-time {
+    font-size: 0.9rem;
+    color: #6b7a72;
+}
+

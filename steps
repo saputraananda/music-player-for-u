@@ -1,0 +1,28 @@
+Bikin folder dalam file (bebas) dengan nama git
+ketik git -v untuk melihat version of git in our device
+
+git init . 
+git config --global user.name "saputraananda"
+git config --global user.email "saputraananda70@gmail.com"
+git add . ==> untuk memindahkan ke staging area
+git commit -m "teks pesan commit"
+git branch -M master
+git remote add origin https://github.com/saputraananda/mentoring-1.git
+git push -u origin master
+
+
+
+
+===============
+
+Area dalam git
+1.  Working tree (LOCAL AREA)
+    git init .
+
+2.  Staging area (Sudah di commit)
+    git add . 
+
+3.  History area (sudah siap di commit)
+
+
+==================
