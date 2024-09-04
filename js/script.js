@@ -3,55 +3,55 @@ const musicList = [
         title: "Cantik",
         artist: "Kahitna",
         file: "assets/music/cantik.mp3",
-        cover: "assets/adhinpict/matcha.png"
+        cover: "assets/adhinpict/matcha.jpg"
     },
     {
         title: "Jatuh Cinta Lagi?",
         artist: "Hivi",
         file: "assets/music/siap kah dhin.mp3",
-        cover: "assets/adhinpict/november.png"
+        cover: "assets/adhinpict/november.jpg"
     },
     {
         title: "Katakan Saja",
         artist: "Adikara",
         file: "assets/music/katakanlah.mp3",
-        cover: "assets/adhinpict/scorpio.png"
+        cover: "assets/adhinpict/scorpio.jpg"
     },
     {
         title: "Looks Like I Love You",
         artist: "Langley",
         file: "assets/music/looks like i love you dhin.mp3",
-        cover: "assets/adhinpict/ramadhan.png"
+        cover: "assets/adhinpict/ramadhan.jpg"
     },
     {
         title: "Pandangan Pertama",
         artist: "RAN",
         file: "assets/music/pandangan pertama.mp3",
-        cover: "assets/adhinpict/potterhead.png"
+        cover: "assets/adhinpict/potterhead.jpg"
     },
     {
         title: "Inikah Cinta?",
         artist: "M.E Voices",
         file: "assets/music/inikah cinta.mp3",
-        cover: "assets/adhinpict/palembang.png"
+        cover: "assets/adhinpict/palembang.jpg"
     },
     {
         title: "Dia",
         artist: "Maliq D'Esse",
         file: "assets/music/kamu dhin.mp3",
-        cover: "assets/adhinpict/scoopy.png"
+        cover: "assets/adhinpict/scoopy.jpg"
     },
     {
         title: "Untitled",
         artist: "Maliq D'Esse",
         file: "assets/music/untitled.mp3",
-        cover: "assets/adhinpict/cantik.png"
+        cover: "assets/adhinpict/cantik.jpg"
     },
     {
         title: "Andai Dia Tahu",
         artist: "Untuk Yulanda",
         file: "assets/music/andai kamu tahu dhin.mp3",
-        cover: "assets/adhinpict/gatau.png"
+        cover: "assets/adhinpict/gatau.jpg"
     }
 ];
 
