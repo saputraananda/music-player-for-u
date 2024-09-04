@@ -71,7 +71,7 @@ img {
 /* Button Icons */
 .bi {
     font-size: 1.5rem;
-    color: #3c4a3e;
+    color: #000000;
 }
 
 /* Hover Effects */
@@ -81,13 +81,23 @@ img {
 }
 
 .btn-outline-light:hover {
-    background-color: #6fbf73;
+    background-color: #97e69d;
     color: white;
 }
+
+.btn-circle:focus {
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Time display styling */
 #current-time, #duration-time {
     font-size: 0.9rem;
     color: #6b7a72;
 }
+
+
+
+
 

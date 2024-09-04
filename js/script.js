@@ -1,45 +1,57 @@
 const musicList = [
     {
-        title: "Siapkah Tuk Jatuh Cinta Lagi?",
+        title: "Cantik",
+        artist: "Kahitna",
+        file: "assets/music/cantik.mp3",
+        cover: "assets/adhinpict/matcha.png"
+    },
+    {
+        title: "Jatuh Cinta Lagi?",
         artist: "Hivi",
-        file: "assets/siap kah dhin.mp3",
-        cover: "assets/Abstrakisme.png"
+        file: "assets/music/siap kah dhin.mp3",
+        cover: "assets/adhinpict/november.png"
     },
     {
         title: "Katakan Saja",
         artist: "Adikara",
-        file: "assets/katakanlah.mp3",
-        cover: "assets/kelinci.jpg"
+        file: "assets/music/katakanlah.mp3",
+        cover: "assets/adhinpict/scorpio.png"
     },
     {
         title: "Looks Like I Love You",
         artist: "Langley",
-        file: "assets/looks like i love you dhin.mp3",
-        cover: "assets/kelinci.jpg"
+        file: "assets/music/looks like i love you dhin.mp3",
+        cover: "assets/adhinpict/ramadhan.png"
     },
     {
         title: "Pandangan Pertama",
         artist: "RAN",
-        file: "assets/pandangan pertama.mp3",
-        cover: "assets/kelinci.jpg"
+        file: "assets/music/pandangan pertama.mp3",
+        cover: "assets/adhinpict/potterhead.png"
+    },
+    {
+        title: "Inikah Cinta?",
+        artist: "M.E Voices",
+        file: "assets/music/inikah cinta.mp3",
+        cover: "assets/adhinpict/palembang.png"
     },
     {
         title: "Dia",
         artist: "Maliq D'Esse",
-        file: "assets/kamu dhin.mp3",
-        cover: "assets/kelinci.jpg"
+        file: "assets/music/kamu dhin.mp3",
+        cover: "assets/adhinpict/scoopy.png"
     },
     {
         title: "Untitled",
-        artist: "Untuk Yulanda",
-        file: "assets/untitled.mp3",
-        cover: "assets/kelinci.jpg"
+        artist: "Maliq D'Esse",
+        file: "assets/music/untitled.mp3",
+        cover: "assets/adhinpict/cantik.png"
     },
     {
         title: "Andai Dia Tahu",
         artist: "Untuk Yulanda",
-        file: "assets/andai kamu tahu dhin.mp3",
-        cover: "assets/kelinci.jpg"
+        file: "assets/music/andai kamu tahu dhin.mp3",
+        cover: "assets/adhinpict/gatau.png"
     }
 ];
 
@@ -154,6 +166,23 @@ function formatTime(seconds) {
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
+
+// Seleksi semua tombol yang akan diatur
+const buttons = document.querySelectorAll('.btn-circle, .btn-outline-light');
+
+buttons.forEach(button => {
+    // Menghapus efek hover setelah tombol disentuh dan dilepas
+    button.addEventListener('touchstart', function() {
+        button.classList.add('no-hover');
+    });
+    
+    button.addEventListener('touchend', function() {
+        setTimeout(() => {
+            button.classList.remove('no-hover');
+        }, 100); // Tambahkan sedikit jeda untuk melihat efek sentuhan
+    });
+});
+ 
 
 // Event listeners
 playPauseButton.addEventListener('click', togglePlayPause);
