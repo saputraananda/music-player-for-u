@@ -49,7 +49,7 @@ const musicList = [
     },
     {
         title: "Andai Dia Tahu",
-        artist: "Untuk Yulanda",
+        artist: "Kahitna",
         file: "assets/music/andai kamu tahu dhin.mp3",
         cover: "assets/adhinpict/gatau.jpg"
     }
