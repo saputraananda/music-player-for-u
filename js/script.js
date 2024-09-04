@@ -3,7 +3,7 @@ const musicList = [
         title: "Cantik",
         artist: "Kahitna",
         file: "assets/music/cantik.mp3",
-        cover: "assets/adhinpict/matcha.jpg"
+        cover: "assets/adhinpict/matcha.svg"
     },
     {
         title: "Jatuh Cinta Lagi?",
