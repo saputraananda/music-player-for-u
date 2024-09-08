@@ -36,15 +36,15 @@ const musicList = [
         cover: "assets/adhinpict/palembang.webp"
     },
     {
-        title: "Dia",
-        artist: "Maliq D'Esse",
-        file: "assets/music/kamu dhin.mp3",
+        title: "Menyimpan Rasa",
+        artist: "Devano",
+        file: "assets/music/menyimpan.mp3",
         cover: "assets/adhinpict/scoopy.webp"
     },
     {
-        title: "Untitled",
+        title: "Terdiam",
         artist: "Maliq D'Esse",
-        file: "assets/music/untitled.mp3",
+        file: "assets/music/terdiam.mp3",
         cover: "assets/adhinpict/cantik.webp"
     },
     {
