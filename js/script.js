@@ -70,7 +70,6 @@ const cover = document.getElementById('cover');
 const currentTimeEl = document.getElementById('current-time');
 const durationTimeEl = document.getElementById('duration-time');
 
-// Load the track into the player
 function loadTrack(trackIndex) {
     const track = musicList[trackIndex];
     audio.src = track.file;
@@ -78,10 +77,9 @@ function loadTrack(trackIndex) {
     artist.textContent = track.artist;
     cover.src = track.cover;
     audio.load();
-    updateProgressBar();  // Start updating progress bar for new track
+    updateProgressBar();  
 }
 
-// Toggle play/pause
 function togglePlayPause() {
     if (audio.paused) {
         playMusic();
@@ -90,7 +88,6 @@ function togglePlayPause() {
     }
 }
 
-// Update icon based on state
 function updatePlayPauseIcon() {
     if (audio.paused) {
         playPauseButton.querySelector('i').className = `bi ${playIcon}`;
@@ -99,75 +96,63 @@ function updatePlayPauseIcon() {
     }
 }
 
-// Play the music
 function playMusic() {
     audio.play();
     updatePlayPauseIcon();
 }
 
-// Pause the music
 function pauseMusic() {
     audio.pause();
     updatePlayPauseIcon();
 }
 
-// Go to the next track
 function nextTrack() {
     currentTrack = (currentTrack + 1) % musicList.length;
     loadTrack(currentTrack);
     playMusic();
 }
 
-// Go to the previous track
 function prevTrack() {
     currentTrack = (currentTrack - 1 + musicList.length) % musicList.length;
     loadTrack(currentTrack);
     playMusic();
 }
 
-// Update progress bar dynamically as music plays
 function updateProgressBar() {
-    // Clear existing listeners to prevent multiple event registrations
     audio.removeEventListener('timeupdate', handleTimeUpdate);
     
     function handleTimeUpdate() {
         const progress = (audio.currentTime / audio.duration) * 100;
         progressBar.style.width = `${progress}%`;
 
-        // Update current time
         currentTimeEl.textContent = formatTime(audio.currentTime);
 
-        // Set duration time (once audio data is available)
         if (audio.duration) {
             durationTimeEl.textContent = formatTime(audio.duration);
         }
 
         if (audio.ended) {
-            nextTrack();  // Move to the next song when current song ends
+            nextTrack();  
         }
     }
 
     audio.addEventListener('timeupdate', handleTimeUpdate);
 }
 
-// Click on progress bar to change position in song
 function setProgress(e) {
     const width = progressContainer.clientWidth;
     const clickX = e.offsetX;
     const duration = audio.duration;
 
-    // Calculate new current time based on where user clicked
     audio.currentTime = (clickX / width) * duration;
 }
 
-// Format time helper function
 function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
     const secs = Math.floor(seconds % 60);
     return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
 }
 
-// Seleksi semua tombol yang akan diatur
 const buttons = document.querySelectorAll('.btn-circle, .btn-outline-light');
 
 buttons.forEach(button => {
